@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="85" height="70" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="Grass" tilewidth="32" tileheight="32">
+  <image source="tuiles/grass.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="19" name="Water1" tilewidth="32" tileheight="32">
+  <image source="tuiles/water.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="37" name="Water " tilewidth="32" tileheight="32">
+  <image source="tuiles/waterfall.png" width="96" height="160"/>
+ </tileset>
+ <tileset firstgid="52" name="mountains" tilewidth="32" tileheight="32">
+  <image source="tuiles/mountains.png" width="384" height="288"/>
+ </tileset>
+ <tileset firstgid="160" name="trunk " tilewidth="32" tileheight="32">
+  <image source="tuiles/trunk.png" width="192" height="96"/>
+ </tileset>
+ <tileset firstgid="178" name="tree top" tilewidth="32" tileheight="32">
+  <image source="tuiles/treetop.png" width="192" height="224"/>
+ </tileset>
+ <tileset firstgid="220" name="bridges" tilewidth="32" tileheight="32">
+  <image source="tuiles/bridges.png" width="192" height="224"/>
+ </tileset>
+ <tileset firstgid="262" name="Logic" tilewidth="32" tileheight="32">
+  <image source="tuiles/logic.png" width="160" height="160"/>
+ </tileset>
+ <tileset firstgid="287" name="watergrass" tilewidth="32" tileheight="32">
+  <image source="tuiles/watergrass.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="305" name="path" tilewidth="32" tileheight="32">
+  <image source="tuiles/SF_Outside_A5.png" width="384" height="768"/>
+ </tileset>
+ <layer name="Undergroud" width="85" height="70">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3czW7CMBAEYMOVC/TOoeqv2r7/8zVVVbUHIHa9m53ZncNIHMByPm82JgocWmsHRUmU/f470fPIFJnKdDbHP6+fdq09d+RlJ9PevC5W57aeN0fT48C4FmOsvXd2PgimntYR6TV90LlvbnoeHPfHtGK8TKvkUn+SqX1kKlOGVDft3a+N7OssTLfaR7LsVyPrlMVo9Diqn/seQTf1rGWvsdFNUZwujXvtnt6jsWmWHtmTkXpkrlOZckem+UwR++zonGb2oax1uvW6VTDdOplMUfoIguktixGn05I7gHVAMEXNf72rmHrU47Uxq5huGXZTlOtSJtOo3HqebOT+k0xta7GSaU8/kanqlCFopojXanbTDJGpTK2Dep8E1TSqN2c2jUpl05NMQ+P13CO66ddxe9UeU51m2OOjmWaMTGXqHYt+zGTK0nuZTKPXpPfzlUxVpzzxeHavummVOo38PpXFFGlP8L6YfqzkfsId1SN6DWZqObpmUG0zm0Yl0jT6HPWan+rUPjL9jdX/ITCZWvUK757DZMoST1Pv/8GzivU8WOsUYT08fisRfUyokSmW6SezUgcp+FwAAA==
+  </data>
+ </layer>
+ <layer name="Bridge" width="85" height="70">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3bMQoCMRgF4ZxLsV3RUtBS0NJOGyvt9YzaeBKTImCxyK8MhGXng9elCIPYLOlSSp3Dt8hbBXbMOwXPjnml6TpvG9gl7xo8O+aVpru8Q2C3vHvw7JhXms6TSDbl2ZRnU55NeTaNeeQ9g7NpzOuHszbl2ZRnU55NeTbl2ZRnU55NeTbl2ZRnU55NeaXpLG/Ss2nDew3Zt2/U/n7/Y1OeTXk25dmUZ1OeTXk25dmUZ1OeTXk25dmUZ1OeTXk25dmUZ1OeTXk25dV+9X3k+WPLhvcastq0733kpuG9hqw27XsfuW94ryHzv5NnU55NeTbl2ZRnU55NeTbl2ZRnU55NeTbl2ZRnU55NeTbl2ZRnU55NeTbl2ZRnU55NeW9mSC3Y+FwAAA==
+  </data>
+ </layer>
+ <layer name="mountain rock" width="85" height="70">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3XQVICQQyF4VwGUVERuCkniCzUBXhGs2DdzHSlJ9Pp/6t6q1gwU3YnQQRTnC07y1sh7/e/w3Qby1Mh27hH69az5aWQ17hH69aUu495Piz7Qj7jHq1bB8uxkNPEz1HLl+VyT6k+Wq3Wt+XH8ltRz16rdbXcLH8V9ew1IDOVco8u1bPXajGjcs8oXfj7HtUAAOuk4r9jjK7FjjG66B1DhXvijXviL/qeAN5UcvdeleXfL3vvjXi/7L03+/sBADAKldy7dYTsu3WEVrunCuffG+d/HpXHZ5DfXvNwBv1xBoF+qbDreGPO+FvrnFHh/njj/vhb6/0BwBxpgTnijzkCAGhFZfldKOI7lxSxC2XfvyJ2IfYvACNRyT2bI2SfzRGYzeugQr/w5t0vVPgfefcLero/enoe/4c7DOX4XAAA
+  </data>
+ </layer>
+ <layer name="treetop" width="85" height="70">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3XsRHCMAwF0Ow/DlAARWA0PALxyZEjv3enSlUOS/psGwBnuLW6t3p09Kv3ej1bvVq9O/rVe732Vp9W345+9R5U5ka5UW7UtXsAzGlExljdiIyxuuyMYU7imZN42XMC0arv3ozvq757M76v+u6t/n0AsIrq2TpD9WydYVT29P7jef/H/PMG/fc6xhuM5w3Cdck68dyZeLPeGfMTz/zEm3V+AHdkBHcknjsCwCgZWah6/srIQtXzV0YWkr+AlVS/zRmq3+YMbvMc7It40fvCbxS/L+z0eHY6cKYfbg4O8PhcAAA=
+  </data>
+ </layer>
+ <layer name="Calque 6" width="85" height="70">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BMQEAAADCoPVPbQhfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPgPHinW0+FwAAA==
+  </data>
+ </layer>
+ <layer name="logic" width="85" height="70" visible="0" opacity="0.55">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2bwW7DIBAF04svSas2h/b//7SxWktRRAKYAe8ubyROkOCMWVhDfDqJEpY3tt3K563t5b98VXxOPOf9zuOHnGa53hydC8pGSdtoZalou6Jxl6dmnlyR0zy000tDfZQ62mnu+17VR6lT7PMsd7lkrqzIKY+c5qFzKa1RWqN61GmN4pFTHjnlkVMeOeUZ5TSXY0VilNPafjyw5U2pUoPX2O8RJ9Q48eq0R5zM7rQHlNOfJ3tWM56P9l4jIo3f0rnXq9MjcrAe/3nYQy+nlnMwr04tI6c8csojpzxyyiOnPBadetj/e7X3ZNGp5dxz48hrtBT75PiX0z9IDzM4HT0Hz+B09G+cwelo5JRHTnm8OPWQ6294ceoh19/w4tQqqfiR0zZS/kY5Tb0f+R3AaYpRTiOMyVLklGcGp1Gf9490GvV5X7HPI6c8csojpzxyytPi9Ig9qZY+PTg9Yk+ipc/c+T51zj9T7JcgpzxyyiOnPFadejqjesSqU09nVI9YdeqZSE6tzBeRnNLzxd57FMkpzV43csojpzwtTn8B9finIfhcAAA=
+  </data>
+ </layer>
+ <objectgroup name="trigger" width="85" height="70">
+  <object x="2661" y="289" width="57" height="26"/>
+  <object name="entree_grotte" type="change-map" x="360" y="64" width="50" height="23">
+   <properties>
+    <property name="dest-map" value="exemple-avec-grotte.tmx"/>
+    <property name="dest-x" value="2336"/>
+    <property name="dest-y" value="620"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

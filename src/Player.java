@@ -56,6 +56,7 @@ public class Player {
 		    	this.y = futurY;
 		    }
 		}
+		
 	}
 
 	private float getFuturX(int delta) {

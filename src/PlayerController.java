@@ -4,6 +4,7 @@ import org.newdawn.slick.KeyListener;
 public class PlayerController implements KeyListener {
 	
 	private Player player;
+	//private Inventory inventory;
 
 	public PlayerController(Player player) {
 		this.player = player;
@@ -57,6 +58,13 @@ public class PlayerController implements KeyListener {
 		    this.player.setMoving(true);
 		    break;
 		case Input.KEY_LSHIFT: this.player.run = 2; break;
+		case Input.KEY_RSHIFT: this.player.run = 2; break;
+		/*case Input.KEY_I: 
+			if(inventory.showi){
+				this.inventory.showi= false;
+			}else {
+				this.inventory.showi= false;
+			} break;*/
 		}
 	}
 	

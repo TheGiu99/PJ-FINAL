@@ -10,7 +10,7 @@ public class StateGame extends StateBasedGame{
 	}
 	
 	public StateGame() {
-		super("Lesson 15 :: StateGame");
+		super("Giuseppe Porpiglia le Patron");
 	}
 
 	@Override
