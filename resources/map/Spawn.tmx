@@ -30,44 +30,44 @@
  <tileset firstgid="305" name="path" tilewidth="32" tileheight="32">
   <image source="tuiles/SF_Outside_A5.png" width="384" height="768"/>
  </tileset>
- <layer name="Undergroud" width="85" height="70">
+ <layer name="ground" width="85" height="70">
   <data encoding="base64" compression="gzip">
    H4sIAAAAAAAAC+3czW7CMBAEYMOVC/TOoeqv2r7/8zVVVbUHIHa9m53ZncNIHMByPm82JgocWmsHRUmU/f470fPIFJnKdDbHP6+fdq09d+RlJ9PevC5W57aeN0fT48C4FmOsvXd2PgimntYR6TV90LlvbnoeHPfHtGK8TKvkUn+SqX1kKlOGVDft3a+N7OssTLfaR7LsVyPrlMVo9Diqn/seQTf1rGWvsdFNUZwujXvtnt6jsWmWHtmTkXpkrlOZckem+UwR++zonGb2oax1uvW6VTDdOplMUfoIguktixGn05I7gHVAMEXNf72rmHrU47Uxq5huGXZTlOtSJtOo3HqebOT+k0xta7GSaU8/kanqlCFopojXanbTDJGpTK2Dep8E1TSqN2c2jUpl05NMQ+P13CO66ddxe9UeU51m2OOjmWaMTGXqHYt+zGTK0nuZTKPXpPfzlUxVpzzxeHavummVOo38PpXFFGlP8L6YfqzkfsId1SN6DWZqObpmUG0zm0Yl0jT6HPWan+rUPjL9jdX/ITCZWvUK757DZMoST1Pv/8GzivU8WOsUYT08fisRfUyokSmW6SezUgcp+FwAAA==
   </data>
  </layer>
- <layer name="Bridge" width="85" height="70">
+ <layer name="mountain" width="85" height="70">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3bMQoCMRgF4ZxLsV3RUtBS0NJOGyvt9YzaeBKTImCxyK8MhGXng9elCIPYLOlSSp3Dt8hbBXbMOwXPjnml6TpvG9gl7xo8O+aVpru8Q2C3vHvw7JhXms6TSDbl2ZRnU55NeTaNeeQ9g7NpzOuHszbl2ZRnU55NeTbl2ZRnU55NeTbl2ZRnU55NeaXpLG/Ss2nDew3Zt2/U/n7/Y1OeTXk25dmUZ1OeTXk25dmUZ1OeTXk25dmUZ1OeTXk25dmUZ1OeTXk25dV+9X3k+WPLhvcastq0733kpuG9hqw27XsfuW94ryHzv5NnU55NeTbl2ZRnU55NeTbl2ZRnU55NeTbl2ZRnU55NeTbl2ZRnU55NeTbl2ZRnU55NeW9mSC3Y+FwAAA==
+   H4sIAAAAAAAAC+3bsQrCMAAG4TyX4lrRUdBR0NFNFyfd9alNhoBDLcEehJA7+LcO4UO7aIYQwuDwbeJ2BbvG3Qqf7XnJdB93LNgj7ln4bM9Lpqe4S8Fece/CZ3teMl0HI9OUT1M+Tfk05dOUT1M+Tfk05dOUT1M+Tfk05dOUT1M+Tfk05dOUT1O+ZLqKW4xsWfFcLTf1G7Wf3//SlE9TPk35NOXTlE9TPk35NOXTlE9TPk35NOXTlE9TPk35NOXTlE9TPk35sl++H3n/2rbiuVoum47djzxUPFfLZdOx+5HniudqOd+dfJryacqnKZ+mfJryacqnKZ+mfJryacqnKZ+mfJryacqnKZ+mfJryacqnKZ+mfNn01z3eHjf37vLU/1B63dzv7Adx7Q4o+FwAAA==
   </data>
  </layer>
- <layer name="mountain rock" width="85" height="70">
+ <layer name="rock &amp; light" width="85" height="70">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3XQVICQQyF4VwGUVERuCkniCzUBXhGs2DdzHSlJ9Pp/6t6q1gwU3YnQQRTnC07y1sh7/e/w3Qby1Mh27hH69az5aWQ17hH69aUu495Piz7Qj7jHq1bB8uxkNPEz1HLl+VyT6k+Wq3Wt+XH8ltRz16rdbXcLH8V9ew1IDOVco8u1bPXajGjcs8oXfj7HtUAAOuk4r9jjK7FjjG66B1DhXvijXviL/qeAN5UcvdeleXfL3vvjXi/7L03+/sBADAKldy7dYTsu3WEVrunCuffG+d/HpXHZ5DfXvNwBv1xBoF+qbDreGPO+FvrnFHh/njj/vhb6/0BwBxpgTnijzkCAGhFZfldKOI7lxSxC2XfvyJ2IfYvACNRyT2bI2SfzRGYzeugQr/w5t0vVPgfefcLero/enoe/4c7DOX4XAAA
+   H4sIAAAAAAAAC+3KsQ0AAAQAMP+PPOwFg4W0cyOYyOUH3FBLBwAAAAAAAAAAAAAAAAAAAAAAAAAAAL5rA5MJZ/hcAAA=
   </data>
  </layer>
- <layer name="treetop" width="85" height="70">
+ <layer name="bridge &amp; trunk" width="85" height="70">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3XsRHCMAwF0Ow/DlAARWA0PALxyZEjv3enSlUOS/psGwBnuLW6t3p09Kv3ej1bvVq9O/rVe732Vp9W345+9R5U5ka5UW7UtXsAzGlExljdiIyxuuyMYU7imZN42XMC0arv3ozvq757M76v+u6t/n0AsIrq2TpD9WydYVT29P7jef/H/PMG/fc6xhuM5w3Cdck68dyZeLPeGfMTz/zEm3V+AHdkBHcknjsCwCgZWah6/srIQtXzV0YWkr+AlVS/zRmq3+YMbvMc7It40fvCbxS/L+z0eHY6cKYfbg4O8PhcAAA=
+   H4sIAAAAAAAAC+3XOw4CMQxFUe9/FQ8KoABWBA0rIRLU8wlOHJx7JFeWZjQisR9mAAAAHyp1KHX81lJ/tl6tU6lzqUtFP3uv1rXUrdS9op+9h988Sj03FrZ5OT5Ltjyjl/rZe7XYUbl3lDq/b60HABiTzD9jzK5FxphddMaQcU+8cU/8Rd8TwJss9+yV9f++7LM34vuyz97s3wcAwCxkubN1hOzZOkKr7Cnj/Hvj/O8jWz+D/PfahzPojzMI/C8ZWccbe8bfqHtGxv3xxv3xN+r9AcAeaYE94o89AgBoRdY/C0W8s6eILJQ9f0VkIfIXgJnIcu/mCNl3cwR28xhkzAtv3vNCxm/kPS+Y6f6Y6Xm8AQsTFDj4XAAA
   </data>
  </layer>
- <layer name="Calque 6" width="85" height="70">
+ <layer name="waterfall &amp; treetop" width="85" height="70">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3BMQEAAADCoPVPbQhfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPgPHinW0+FwAAA==
+   H4sIAAAAAAAAC+3XSw7CMAxF0W6G/x/WDgyAAbAxvIAqaqMX3Dj3SG8UVUpEYpuuw1AbyzaRnd/WqjWzzBNZ+G2tWkvLKpG139aqpXr7V8vNcs9Yj7a2txwSOfZ83+dheVpeGevR1k6WcyKXnu/7vC0fyzdjPfoaEBk9Kn3+HPSo9Plz0KPoUQBQmxIzRutKzBit854xeCd6vBM973cCqEWvvR7ni157Pc4XvfZGPx8AAK2IPlt7iD5beyg1e3L/9bj/4wy5g/z3Goc7qMcdBOrFrKNHn9Gbap/h/ejxfvSm+n4A0EdKoI/o0UcAAKV4zELR5y+PWSj6/OUxCzF/AWhJ9N7sIXpv9kBvngbqhZ66XvAb6esFNV2Pmg7gn37LuPow+FwAAA==
   </data>
  </layer>
- <layer name="logic" width="85" height="70" visible="0" opacity="0.55">
+ <layer name="logic" width="85" height="70" opacity="0.55">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+2bwW7DIBAF04svSas2h/b//7SxWktRRAKYAe8ubyROkOCMWVhDfDqJEpY3tt3K563t5b98VXxOPOf9zuOHnGa53hydC8pGSdtoZalou6Jxl6dmnlyR0zy000tDfZQ62mnu+17VR6lT7PMsd7lkrqzIKY+c5qFzKa1RWqN61GmN4pFTHjnlkVMeOeUZ5TSXY0VilNPafjyw5U2pUoPX2O8RJ9Q48eq0R5zM7rQHlNOfJ3tWM56P9l4jIo3f0rnXq9MjcrAe/3nYQy+nlnMwr04tI6c8csojpzxyyiOnPBadetj/e7X3ZNGp5dxz48hrtBT75PiX0z9IDzM4HT0Hz+B09G+cwelo5JRHTnm8OPWQ6294ceoh19/w4tQqqfiR0zZS/kY5Tb0f+R3AaYpRTiOMyVLklGcGp1Gf9490GvV5X7HPI6c8csojpzxyytPi9Ig9qZY+PTg9Yk+ipc/c+T51zj9T7JcgpzxyyiOnPFadejqjesSqU09nVI9YdeqZSE6tzBeRnNLzxd57FMkpzV43csojpzwtTn8B9finIfhcAAA=
+   H4sIAAAAAAAAC+3bzY6CMBRAYd24GWdlfP9XdVw0JhOBAody23u+pCuIPydVCujlohq3K7ufFMHv33z9qRhFzb6jjduKfUtTzVv7PWnTZTbl0U2XHm9u+yjbnKe8d9N75XizKc+my1xL8TxG8ds8RvFsyrMpz6Y8m/JsymvVdMT7BGXd9G2s4Tz9oOZJr02P+Jxkb3oEqulz4lrAI2Hro48RGeevTetF+c3DUU0jr8F6bRqZTXk25dmUZ1OeTXk23Wbu2lPEppHXnsWZr3HkeXqWSE3JDjblZWja+j1maNqaTXk25dmU10vTHtb6RS9Ne2LTfb71a9V06v+RI2rZNAub8mzKy9B01PN95ynPpjyb8mzKsynPprw9Tc+4JrHnOZfu71P3+TPN0xo25dmUZ1OeTXlRm/Z0j+q/qE17ZlPeSE2jfF+M1JS2tQ3RdOp/vBnHAzo31cfe8/0XBoTYFPhcAAA=
   </data>
  </layer>
  <objectgroup name="trigger" width="85" height="70">
-  <object x="2661" y="289" width="57" height="26"/>
-  <object name="entree_grotte" type="change-map" x="360" y="64" width="50" height="23">
+  <object name="go sandmap" type="change-map" x="2661" y="289" width="57" height="26">
    <properties>
-    <property name="dest-map" value="exemple-avec-grotte.tmx"/>
-    <property name="dest-x" value="2336"/>
-    <property name="dest-y" value="620"/>
+    <property name="dest-map" value="Sandmap.tmx"/>
+    <property name="dest-x" value="50"/>
+    <property name="dest-y" value="300"/>
    </properties>
   </object>
+  <object x="360" y="82" width="50" height="23"/>
  </objectgroup>
 </map>
