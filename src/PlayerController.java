@@ -56,8 +56,8 @@ public class PlayerController implements KeyListener {
 		    this.player.setDirection(3);
 		    this.player.setMoving(true);
 		    break;
-		case Input.KEY_LSHIFT: this.player.run = 10; break;
-		case Input.KEY_RSHIFT: this.player.run = 10; break;
+		case Input.KEY_LSHIFT: this.player.run = 3; break;
+		case Input.KEY_RSHIFT: this.player.run = 3; break;
 		}
 	}
 	

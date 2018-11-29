@@ -64,7 +64,7 @@
   </data>
  </layer>
  <objectgroup name="stair" width="85" height="70">
-  <object name="stair" type="stair" x="627" y="262" width="72" height="96"/>
+  <object name="stair" type="stairr" x="627" y="262" width="72" height="96"/>
   <object name="go spawn" type="change-map" x="3" y="291" width="29" height="23">
    <properties>
     <property name="dest-map" value="Spawn.tmx"/>

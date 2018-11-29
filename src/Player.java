@@ -10,7 +10,8 @@ public class Player {
 	private int direction = 0;
 	private boolean moving = false;
 	private Animation[] mooving = new Animation[8];
-	private boolean onStair = false;
+	private boolean onStairL = false;
+	private boolean onStairR = false;
 	private Map map;
 	int run;
 	
@@ -19,7 +20,7 @@ public class Player {
 	}
 	
 	public void init() throws SlickException {
-		SpriteSheet spriteSheet = new SpriteSheet("resources/characters/player/BODY_skeleton.png", 64, 64);
+		SpriteSheet spriteSheet = new SpriteSheet("resources/characters/player/Hero_Walk.png", 64, 64);
 		this.mooving[0] = loadAnimation(spriteSheet, 0, 1, 0);
 	    this.mooving[1] = loadAnimation(spriteSheet, 0, 1, 1);
 	    this.mooving[2] = loadAnimation(spriteSheet, 0, 1, 2);
@@ -73,12 +74,19 @@ public class Player {
 			switch (this.direction) {
 			case 0: futurY = this.y - .1f * delta * run; break;
 			case 2: futurY = this.y + .1f * delta * run; break;
-			case 1: if (this.onStair) {
+			case 1: if (this.onStairR) {
 				futurY = this.y + .1f * delta * run;
-			} break;
-			case 3: if (this.onStair) {
+			}
+			if (this.onStairL) {
 				futurY = this.y - .1f * delta * run;
-			} break;
+			}
+			break;
+			case 3: if (this.onStairR) {
+				futurY = this.y - .1f * delta * run;
+				}
+				if (this.onStairL) {
+					futurY = this.y + .1f * delta * run;
+			 	}break;
 			}
 		return futurY;
 	}
@@ -91,6 +99,8 @@ public class Player {
 	public void setDirection(int direction) { this.direction = direction; }
 	public boolean isMoving() { return moving; }
 	public void setMoving(boolean moving) { this.moving = moving; }
-	public boolean isOnStair() { return onStair; }
-	public void setOnStair(boolean onStair) { this.onStair = onStair; }
+	public boolean isOnStairL() { return onStairL; }
+	public void setOnStairL(boolean onStairL) { this.onStairL = onStairL; }
+	public boolean isOnStairR() { return onStairR; }
+	public void setOnStairR(boolean onStairR) { this.onStairR = onStairR; }
 }

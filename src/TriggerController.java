@@ -11,13 +11,16 @@ public class TriggerController {
 	}
 
 	public void update() throws SlickException {
-		this.player.setOnStair(false);
+		this.player.setOnStairR(false);
+		this.player.setOnStairL(false);
 		for (int objectID = 0; objectID < this.map.getObjectCount(); objectID++) {
 			if (isInTrigger(objectID)) {
 				if ("teleport".equals(this.map.getObjectType(objectID))) {
 					this.teleport(objectID);
-				} else if ("stair".equals(this.map.getObjectType(objectID))) {
-					this.player.setOnStair(true);
+				} else if ("stairl".equals(this.map.getObjectType(objectID))) {
+					this.player.setOnStairL(true);
+				} else if ("stairr".equals(this.map.getObjectType(objectID))) {
+					this.player.setOnStairR(true);
 				} else if ("change-map".equals(this.map.getObjectType(objectID))) {
 					this.changeMap(objectID);
 				}
