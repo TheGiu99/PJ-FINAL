@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="40" height="30" tilewidth="32" tileheight="32" backgroundcolor="#ffffff">
+ <tileset firstgid="1" name="stairs" tilewidth="32" tileheight="32">
+  <image source="tuiles/stairs.png" width="256" height="448"/>
+ </tileset>
+ <tileset firstgid="113" name="floor" tilewidth="32" tileheight="32">
+  <image source="tuiles/floor.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="177" name="carpet" tilewidth="32" tileheight="32">
+  <image source="tuiles/carpet.png" width="512" height="384"/>
+ </tileset>
+ <tileset firstgid="369" name="logic" tilewidth="32" tileheight="32">
+  <image source="tuiles/logic.png" width="160" height="160"/>
+ </tileset>
+ <tileset firstgid="394" name="country" tilewidth="32" tileheight="32">
+  <image source="tuiles/country.png" width="160" height="128"/>
+ </tileset>
+ <tileset firstgid="414" name="victoria" tilewidth="32" tileheight="32">
+  <image source="tuiles/victoria.png" width="352" height="160"/>
+ </tileset>
+ <tileset firstgid="469" name="dungeon" tilewidth="32" tileheight="32">
+  <image source="tuiles/dungeon.png" width="416" height="256"/>
+ </tileset>
+ <tileset firstgid="573" name="floor1" tilewidth="32" tileheight="32">
+  <image source="tuiles/floor1.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="829" name="cabinets" tilewidth="32" tileheight="32">
+  <image source="tuiles/cabinets.png" width="192" height="416"/>
+ </tileset>
+ <tileset firstgid="907" name="chests" tilewidth="32" tileheight="32">
+  <image source="tuiles/chests.png" width="64" height="96"/>
+ </tileset>
+ <layer name="ground" width="40" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3VoQ0AIBAEQfL9UQIl0L/FYj6IF5Awk6w/d60B3NEj7wUj8l5gX82MPOAPfqjGvpr9d4YfAjhaADPpMsASAAA=
+  </data>
+ </layer>
+ <layer name="wall" width="40" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2VuwqAMAxFU/0y/3/29QG6anXVauYoBhowHe6BAx0KOdslAgDkMASilu1e7Nkx+Pct7MpG8Y6F9B3sySbxToX0feHdNyn3Z+e+Tbm/O/dd2v3qlwwATGCH7H3YoXywQzbkDjW1+IAdAgCABzdcT0suwBIAAA==
+  </data>
+ </layer>
+ <layer name="stair" width="40" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OsQ3AIAwAQQNNps4IjJBBMh1FeiSa2MWd9P1HAHDiGtkHAHt3zz7Ym8X/nuJ/VbztCwD+sADEjMrmwBIAAA==
+  </data>
+ </layer>
+ <layer name="furnitures" width="40" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3UOQqAQBBE0W68lxiIp/MQLqGCRi6RmHsoSyYRQTCbQupBBZ39qM1EROKo3KzGNg93mcTteerQ1XvsincT2mbivp247XKQ94n8QYq/npH99rscbQVx3+BhrBq0tcR9C9pW4r7Rw0RE5JsTkQdsP8ASAAA=
+  </data>
+ </layer>
+ <layer name="foreground" width="40" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OMQ0AAAgDsCX4w78cNHBx0CpoAgAAsNd1PQDgiwHZzxBBwBIAAA==
+  </data>
+ </layer>
+ <layer name="logic" width="40" height="30" opacity="0.4">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3VywqAIBBG4fGR3ZQucmEv3gQJQyS06w/OByK4OogXMwD4xpbMmo8c5rGmoHpHCS2LSNfQvWd/aCoinX3SodKXxfvO8zYbwJ+tSeee5evviferCfVV8Xdq7N8dfe+o9/EPAVBzAKFdjDTAEgAA
+  </data>
+ </layer>
+ <objectgroup name="trigger" width="40" height="30">
+  <object name="downstair" type="teleport" x="448" y="258" width="30" height="27">
+   <properties>
+    <property name="dest-x" value="1036"/>
+    <property name="dest-y" value="576"/>
+   </properties>
+  </object>
+  <object name="upstare" type="teleport" x="1025" y="543" width="29" height="23">
+   <properties>
+    <property name="dest-x" value="428"/>
+    <property name="dest-y" value="282"/>
+   </properties>
+  </object>
+  <object name="go-Spawn" type="change-map" x="925" y="686" width="36" height="17">
+   <properties>
+    <property name="dest-map" value="Spawn.tmx"/>
+    <property name="dest-x" value="1265"/>
+    <property name="dest-y" value="675"/>
+   </properties>
+  </object>
+  <object name="chest" type="chest" x="379" y="222" width="41" height="62"/>
+ </objectgroup>
+</map>

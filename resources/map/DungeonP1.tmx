@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="7" height="13" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="floor" tilewidth="32" tileheight="32">
+  <image source="tuiles/floor.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="65" name="floor" tilewidth="32" tileheight="32">
+  <image source="tuiles/floor1.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="321" name="logic" tilewidth="32" tileheight="32">
+  <image source="tuiles/logic.png" width="160" height="160"/>
+ </tileset>
+ <tileset firstgid="346" name="dungeon" tilewidth="32" tileheight="32">
+  <image source="tuiles/dungeon.png" width="416" height="256"/>
+ </tileset>
+ <layer name="ground" width="7" height="13">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgYGCwxYJhAJ+cIxA7IWHnUTm8cgBqsDepbAEAAA==
+  </data>
+ </layer>
+ <layer name="circle" width="7" height="13">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAX7gHg/EB/AIncOiM8D8QUscveA+D4QPyDSHgArZHCDbAEAAA==
+  </data>
+ </layer>
+ <layer name="wall" width="7" height="13">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC4tlZGCIAuJoJBwDxHFAHAvE6UCcgYQzkeSwAXrIRTPilsvAI0eKfVk45LKB4uU45CqA4i045FqB4gAIZsPEbAEAAA==
+  </data>
+ </layer>
+ <layer name="stair" width="7" height="13">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgoB3gZITQXIw0tGQIAQAt0uwUbAEAAA==
+  </data>
+ </layer>
+ <layer name="background" width="7" height="13">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGDogiZGBIZkRkw0C+UB2ASMmezABABMFwY5sAQAA
+  </data>
+ </layer>
+ <layer name="logic" width="7" height="13" opacity="0.3">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgIB/4MjIwuCFhP0aEnCcjqloPKsmB+I6MCDaxcgFQNwZikaO2O4OAbHckHAyVAwDWKsC/bAEAAA==
+  </data>
+ </layer>
+ <objectgroup name="trigger" width="7" height="13">
+  <object name="go DungeonP2" type="change-map" x="66" y="97" width="27" height="28">
+   <properties>
+    <property name="dest-map" value="DungeonP2.tmx"/>
+    <property name="dest-x" value="100"/>
+    <property name="dest-y" value="100"/>
+   </properties>
+  </object>
+  <object name="go Trap" type="change-map" x="130" y="95" width="28" height="30">
+   <properties>
+    <property name="dest-map" value="Trap.tmx"/>
+    <property name="dest-x" value="100"/>
+    <property name="dest-y" value="100"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

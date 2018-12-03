@@ -4,6 +4,7 @@ public class TriggerController {
 
 	private Map map;
 	private Player player;
+	private Action action;
 
 	public TriggerController(Map map, Player player) {
 		this.map = map;
@@ -23,9 +24,16 @@ public class TriggerController {
 					this.player.setOnStairR(true);
 				} else if ("change-map".equals(this.map.getObjectType(objectID))) {
 					this.changeMap(objectID);
-				}
+				} /*else if ("panel".equals(this.map.getObjectType(objectID))) {
+					this.panel(objectID);
+				}*/
 			}
 		}
+	}
+	
+	@SuppressWarnings("unused")
+	private void panel(int objectID) {
+		this.action.trigger=true;
 	}
 
 	private boolean isInTrigger(int id) {

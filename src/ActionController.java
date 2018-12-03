@@ -1,12 +1,12 @@
 import org.newdawn.slick.Input;
 import org.newdawn.slick.KeyListener;
 
-public class InventoryController implements KeyListener{
+public class ActionController implements KeyListener{
 	
-	Inventory inventory=new Inventory();
+	Action action=new Action();
 	
-	public InventoryController(Inventory inventory) {
-		this.inventory = inventory;
+	public ActionController(Action action) {
+		this.action = action;
 	}
 
 	@Override
@@ -25,8 +25,13 @@ public class InventoryController implements KeyListener{
 	public void keyPressed(int key, char c) {
 		if(Input.KEY_I==key)
 		{
-			if(this.inventory.showi){this.inventory.showi=false;}
-			else {this.inventory.showi=true;}
+			if(this.action.showi){this.action.showi=false;}
+			else {this.action.showi=true;}
+		}
+		if(Input.KEY_A==key)
+		{
+			if(this.action.trigger) {this.action.trigger=false;}
+			else {this.action.trigger=true;}
 		}
 	}
 

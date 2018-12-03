@@ -16,7 +16,7 @@ public class MapGameState extends BasicGame implements GameState {
 	private Camera camera = new Camera(player);
 	public static final int ID = 2;
 	private Hud hud = new Hud();
-	private Inventory inventory = new Inventory();
+	private Action action = new Action();
 
 	public MapGameState() {
 		super("Giu is the Boss");
@@ -47,10 +47,10 @@ public class MapGameState extends BasicGame implements GameState {
 		this.map.init();
 		this.player.init();
 		this.hud.init();
-		this.inventory.init();
-		InventoryController Icontroler = new InventoryController(this.inventory);
+		this.action.init();
+		ActionController Acontroler = new ActionController(this.action);
 		PlayerController controler = new PlayerController(this.player);
-		container.getInput().addKeyListener(Icontroler);
+		container.getInput().addKeyListener(Acontroler);
 		container.getInput().addKeyListener(controler);
 	}
 
@@ -67,7 +67,7 @@ public class MapGameState extends BasicGame implements GameState {
 		this.player.render(g);
 		this.map.renderForeground();
 		this.hud.render(g);
-		this.inventory.render(container, g);
+		this.action.render(container, g);
 	}
 
 	@Override
@@ -75,7 +75,7 @@ public class MapGameState extends BasicGame implements GameState {
 		this.triggers.update();
 		this.player.update(delta);
 		this.camera.update(container);	
-		this.inventory.update(container);
+		this.action.update(container);
 	}
 
 	@Override

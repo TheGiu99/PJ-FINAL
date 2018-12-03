@@ -3,9 +3,10 @@ import org.newdawn.slick.Graphics;
 import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;
 
-public class Inventory {
+public class Action {
 	
 	boolean showi;
+	boolean trigger;
 	
 	private Image inventory;
 	private Image item;
@@ -20,7 +21,6 @@ public class Inventory {
 		if(showi){
 			g.drawImage(inventory, container.getWidth()/3+75, container.getHeight()/3);
 			g.drawImage(item,container.getWidth()/3+75, container.getHeight()/3);
-			
 		}
 	}
 	
