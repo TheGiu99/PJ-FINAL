@@ -1,8 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="50" height="30" tilewidth="32" tileheight="32">
- <layer name="Tile Layer 1" width="50" height="30">
+<map version="1.0" orientation="orthogonal" width="30" height="15" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="dungeon" tilewidth="32" tileheight="32">
+  <image source="tuiles/dungeon.png" width="416" height="256"/>
+ </tileset>
+ <tileset firstgid="105" name="floor1" tilewidth="32" tileheight="32">
+  <image source="tuiles/floor1.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="361" name="logic" tilewidth="32" tileheight="32">
+  <image source="tuiles/logic.png" width="160" height="160"/>
+ </tileset>
+ <layer name="floor" width="30" height="15">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3BMQEAAADCoPVPbQhfoAAAAAAAgNcAxA3c/HAXAAA=
+   H4sIAAAAAAAAC2NgYGDIojOGgZFmbyYd7cwetXfU3lF7R+0dtZcoewGrDWrDCAcAAA==
   </data>
  </layer>
+ <layer name="wall" width="30" height="15">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3NOwoAIBAD0fXXqr3aq/c/oCn3BAEhA6+ebGYBIkmCAhkqNJLuvgMmyXLfDYfkui87ffXVV9+fvg/RYJV5CAcAAA==
+  </data>
+ </layer>
+ <layer name="ground &amp; wall2" width="30" height="15">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgoB5goaJZo/aO2jvQ9g41cByIT1Cgn9xwvg7ENwbAXkrBYLP3GRA/B+IXdLb3GxB/B+IfdLaXjZGBgR2IORjpay82AAAVX7JyCAcAAA==
+  </data>
+ </layer>
+ <layer name="Tile Layer 4" width="30" height="15">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjYBSMglEwCkYuAABNKlmzCAcAAA==
+  </data>
+ </layer>
+ <layer name="Tile Layer 5" width="30" height="15">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjYBSMglEwCkYuAABNKlmzCAcAAA==
+  </data>
+ </layer>
+ <layer name="logic" width="30" height="15" opacity="0.39">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAX0AqWMDAx5VMBljITNAqmBgUJG3G4iBRQwEjarYBjZWwE0p3IA7C0GmlMygsJ51N5Re5HtrQKy86mAqxkJm1UNtRcANRIvqwgHAAA=
+  </data>
+ </layer>
+ <objectgroup name="trigger" width="30" height="15">
+  <object name="Go Cave2" type="change-map" x="816" y="372" width="62" height="57">
+   <properties>
+    <property name="dest-map" value="Cave2.tmx"/>
+    <property name="dest-x" value="400"/>
+    <property name="dest-y" value="720"/>
+   </properties>
+  </object>
+  <object name="stair" type="stairl" x="127" y="265" width="32" height="51"/>
+  <object name="stair" type="stairr" x="99" y="263" width="23" height="51"/>
+ </objectgroup>
 </map>

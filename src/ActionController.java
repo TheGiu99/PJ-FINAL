@@ -4,9 +4,10 @@ import org.newdawn.slick.KeyListener;
 public class ActionController implements KeyListener{
 	
 	Action action=new Action();
+	Boolean axion;
 	
-	public ActionController(Action action) {
-		this.action = action;
+	public ActionController(Action inventory) {
+		this.action = inventory;
 	}
 
 	@Override
@@ -27,11 +28,6 @@ public class ActionController implements KeyListener{
 		{
 			if(this.action.showi){this.action.showi=false;}
 			else {this.action.showi=true;}
-		}
-		if(Input.KEY_A==key)
-		{
-			if(this.action.trigger) {this.action.trigger=false;}
-			else {this.action.trigger=true;}
 		}
 	}
 

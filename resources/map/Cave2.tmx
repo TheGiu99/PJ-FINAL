@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="49" height="30" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="mountains" tilewidth="32" tileheight="32">
+  <image source="tuiles/mountains.png" width="384" height="288"/>
+ </tileset>
+ <tileset firstgid="109" name="path" tilewidth="32" tileheight="32">
+  <image source="tuiles/SF_Outside_A5.png" width="384" height="768"/>
+ </tileset>
+ <tileset firstgid="397" name="logic" tilewidth="32" tileheight="32">
+  <image source="tuiles/logic.png" width="160" height="160"/>
+ </tileset>
+ <tileset firstgid="422" name="floor" tilewidth="32" tileheight="32">
+  <image source="tuiles/floor1.png" width="512" height="512"/>
+ </tileset>
+ <layer name="ground" width="49" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3YsQ0AIAzEwJ8gDfvPwXq01CiKjOTiBnDrSlJSo/UhGxhsYLCBwQYGGxhsYLCBwQYGGxhsYLCBwQaGl4+2L51/bhK14QAHZt+w+BYAAA==
+  </data>
+ </layer>
+ <layer name="cliff" width="49" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2RuQqAMBAF41WKWnq1oq3//3FuESsfKOLxFt7AEFi2yCQhCPEsjdk5sgYNozk5cgANi7k6cgYNFZgxU4KZGr5HDRyogQM1cKAGDtTAgRo4UAMHauBADRyghsJMT8zibnJh923zm+37X6E38EIfz/bXWxzZAAz3UxD4FgAA
+  </data>
+ </layer>
+ <layer name="mountain" width="49" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2VOQ7CMBBFp2IRHVsJgRICJaRk7Vg71o71/hfgRwqKY8mRI2FHRvOkV42V+I9mEiKGYXQowKIFSwYzVGHNgpU/yFDnDNoZmrAd2XA0Qxf2IzsOZPh+j8rCe4ZwHDlwIIO8B+EceUJ9Aqdw5lCGcI58ob6Ca7iheEd0VO2RjQzhHAVC/QCP8ETxjuio2iMTGVqU7J8n1W/wDh8U74iOqj0ykaFHyf756ce1Uf1vTGQYUbJ/QfpxbeQMc7iAyx893wbyjG7hDu7zvFRG5Bk9wwu85nmpjMgz+oQv+M7zUgzDMAzDGOUDdk2i2fgWAAA=
+  </data>
+ </layer>
+ <layer name="training area" width="49" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3PsQ2AMBRDwa+sApkAmACy/0p4AgoKUKQ76fV2FQAAAMCzpVWtqbe/l7y3Zfuejok/nNl+pTHxB4Av3I8ug0r4FgAA
+  </data>
+ </layer>
+ <layer name="Calque 5" width="49" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BAQ0AAADCoPdPbQ8HFAAAAAAA/Bj46Ea7+BYAAA==
+  </data>
+ </layer>
+ <layer name="logic" width="49" height="30" opacity="0.5">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2Y6wrCMAxG2/enus2JF/RdVWRQQmov+5ZmmAP5U7Y2J71BnTMMo4SLd+4kEFePyXd+9zORCKC+cwRm7Fycmdxmpk3SoZZ/dbhF83gHu0k5xP9w365hC4flPIr7jvcdeo1t4UD7DAmfI8ill8Mn/6HyPEzlKuUwkbahYVxph1z9au8kDfOAQNKBqyECmuthxTlXej+goWt09F+PvTlQxsZxezmk9noLvRyQmIMOzEEH5qADzuHhy99QpN5sfsWzsebLXHE12AtaHV6Q6mUX+BYAAA==
+  </data>
+ </layer>
+ <objectgroup name="trigger" width="49" height="30">
+  <object name="stair" type="stairr" x="434" y="354" width="79" height="103"/>
+  <object name="go Spawn" type="change-map" x="360" y="910" width="78" height="47">
+   <properties>
+    <property name="dest-map" value="Spawn.tmx"/>
+    <property name="dest-x" value="386"/>
+    <property name="dest-y" value="110"/>
+   </properties>
+  </object>
+  <object name="stair" type="stairl" x="994" y="520" width="75" height="97"/>
+ </objectgroup>
+</map>

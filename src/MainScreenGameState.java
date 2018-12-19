@@ -1,4 +1,4 @@
-import org.newdawn.slick.GameContainer;
+	import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.Image;
 import org.newdawn.slick.Input;
@@ -15,7 +15,7 @@ public class MainScreenGameState extends BasicGameState{
 	  @Override
 	  public void init(GameContainer container, StateBasedGame game) throws SlickException {
 	    this.game = game;
-	    this.background = new Image("resources/menu/lord_rvf_01.png");
+	    this.background = new Image("resources/menu/illuminati-mpi.jpg");
 	  }
 
 	  @Override

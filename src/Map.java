@@ -8,7 +8,7 @@ public class Map {
 	private TiledMap tiledMap;
 
 	public void init() throws SlickException {
-	    this.tiledMap = new TiledMap("resources/map/Spawn.tmx");
+	    this.tiledMap = new TiledMap("resources/map/Home.tmx");
 	}
 	
 	public void renderBackground() {

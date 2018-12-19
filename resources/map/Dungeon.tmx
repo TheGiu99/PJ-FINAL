@@ -12,14 +12,17 @@
  <tileset firstgid="346" name="dungeon" tilewidth="32" tileheight="32">
   <image source="tuiles/dungeon.png" width="416" height="256"/>
  </tileset>
+ <tileset firstgid="450" name="panel" tilewidth="32" tileheight="32">
+  <image source="tuiles/panel.png" width="512" height="512"/>
+ </tileset>
  <layer name="ground" width="7" height="13">
   <data encoding="base64" compression="gzip">
    H4sIAAAAAAAAC2NgYGCwxYJhAJ+cIxA7IWHnUTm8cgBqsDepbAEAAA==
   </data>
  </layer>
- <layer name="circle" width="7" height="13">
+ <layer name="circle &amp; panel" width="7" height="13">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGAX7gHg/EB/AIncOiM8D8QUscveA+D4QPyDSHgArZHCDbAEAAA==
+   H4sIAAAAAAAAC2NgGDmAnQm7+D4g3g/EB7DInQPi80B8AYvcPSC+D8QPiLQfACkFLzpsAQAA
   </data>
  </layer>
  <layer name="wall" width="7" height="13">
@@ -39,23 +42,24 @@
  </layer>
  <layer name="logic" width="7" height="13" opacity="0.3">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgIB/4MjIwuCFhP0aEnCcjqloPKsmB+I6MCDaxcgFQNwZikaO2O4OAbHckHAyVAwDWKsC/bAEAAA==
+   H4sIAAAAAAAAC2NgIB/4MjIwuCFhP0aEnCcjqloPKsmB+I6MCDY15AKg7g/EIkeOO4OAbHckHAyVAwDcvDVdbAEAAA==
   </data>
  </layer>
  <objectgroup name="trigger" width="7" height="13">
-  <object name="go DungeonP2" type="change-map" x="66" y="97" width="27" height="28">
-   <properties>
-    <property name="dest-map" value="DungeonP2.tmx"/>
-    <property name="dest-x" value="100"/>
-    <property name="dest-y" value="100"/>
-   </properties>
-  </object>
-  <object name="go Trap" type="change-map" x="130" y="95" width="28" height="30">
+  <object name="go Trap" type="change-map" x="66" y="97" width="27" height="28">
    <properties>
     <property name="dest-map" value="Trap.tmx"/>
-    <property name="dest-x" value="100"/>
-    <property name="dest-y" value="100"/>
+    <property name="dest-x" value="1024"/>
+    <property name="dest-y" value="336"/>
    </properties>
   </object>
+  <object name="go Boss" type="change-map" x="130" y="95" width="28" height="30">
+   <properties>
+    <property name="dest-map" value="Boss.tmx"/>
+    <property name="dest-x" value="128"/>
+    <property name="dest-y" value="272"/>
+   </properties>
+  </object>
+  <object name="panel" type="panel" x="96" y="275" width="31" height="22"/>
  </objectgroup>
 </map>

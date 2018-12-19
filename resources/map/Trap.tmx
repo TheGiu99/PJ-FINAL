@@ -1,8 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="50" height="30" tilewidth="32" tileheight="32">
- <layer name="Tile Layer 1" width="50" height="30">
+<map version="1.0" orientation="orthogonal" width="37" height="20" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="floor" tilewidth="32" tileheight="32">
+  <image source="tuiles/floor1.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="257" name="dungeon" tilewidth="32" tileheight="32">
+  <image source="tuiles/dungeon.png" width="416" height="256"/>
+ </tileset>
+ <tileset firstgid="361" name="logic" tilewidth="32" tileheight="32">
+  <image source="tuiles/logic.png" width="160" height="160"/>
+ </tileset>
+ <tileset firstgid="386" name="panel" tilewidth="32" tileheight="32">
+  <image source="tuiles/panel.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="642" name="mountains" tilewidth="32" tileheight="32">
+  <image source="tuiles/mountains.png" width="384" height="288"/>
+ </tileset>
+ <layer name="floor" width="37" height="20">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3BMQEAAADCoPVPbQhfoAAAAAAAgNcAxA3c/HAXAAA=
+   H4sIAAAAAAAAC+3OIRIAIAwEsYP+/8/FgcdUZGfWJ0nWeQ+4cmNiYmKaanpjYmJiYmL6NTXdnbO7kAsAAA==
   </data>
  </layer>
+ <layer name="wall" width="37" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2RsQ2AMAwEEwgt0AMDsAFjsEHYAPav+NKyKFzFj+STrvBXJ7nklDLsCOzhAAsc4UTgLJoWuBK4iSbJoe7WRJONvzR5w9p0wl3I8DtNy6YKL7V5N93wUZt30xfRZCOabESTDdamF6o++EGQCwAA
+  </data>
+ </layer>
+ <layer name="wall2" width="37" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NggIDdTBCanZFh0IDjo24iClxmGmgXjIJRMApGwSgYBaNgFIwCcgEAVqRhEZALAAA=
+  </data>
+ </layer>
+ <layer name="panel" width="37" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OAQkAQAgEsLN/sY9gHEsIj7AlWALABa+Srt8LALYNZ9/PtpALAAA=
+  </data>
+ </layer>
+ <layer name="Tile Layer 5" width="37" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BMQEAAADCoPVPbQwfoAAAgJcBn2WXVpALAAA=
+  </data>
+ </layer>
+ <layer name="logic" width="37" height="20" opacity="0.5">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2SQQqAMAwE0+d6SetBEf28La4QxMNeJBEyMFB62YFWJPkzSxHR7grVybF9M+PcyqUXLZso3po2vKsXtmnv52qM0MTcf7E/Qft3PJsG+vgrEZrY7WzitrOJ284mbjtqU3XyQNMJL4yS25ALAAA=
+  </data>
+ </layer>
+ <objectgroup name="trigger" width="37" height="20">
+  <object name="stair" type="stairr" x="993" y="324" width="31" height="56"/>
+  <object name="stair" type="stairl" x="1027" y="327" width="29" height="55"/>
+  <object name="go Sandmap" type="change-map" x="65" y="97" width="28" height="32">
+   <properties>
+    <property name="dest-map" value="Sandmap.tmx"/>
+    <property name="dest-x" value="2608"/>
+    <property name="dest-y" value="64"/>
+   </properties>
+  </object>
+ </objectgroup>
 </map>

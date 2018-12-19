@@ -3,20 +3,22 @@ import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.Input;
 import org.newdawn.slick.Music;
+//import org.newdawn.slick.Music;
 import org.newdawn.slick.SlickException;
 import org.newdawn.slick.state.GameState;
 import org.newdawn.slick.state.StateBasedGame;
 
 public class MapGameState extends BasicGame implements GameState {
 
-	private GameContainer container;
+	private GameContainer container;	
 	private Map map = new Map();
 	private Player player = new Player(map);
+	//private enemy enemy = new enemy(map);
 	private TriggerController triggers = new TriggerController(map, player);
 	private Camera camera = new Camera(player);
 	public static final int ID = 2;
 	private Hud hud = new Hud();
-	private Action action = new Action();
+	private Action inventory = new Action();
 
 	public MapGameState() {
 		super("Giu is the Boss");
@@ -42,21 +44,22 @@ public class MapGameState extends BasicGame implements GameState {
 	@Override
 	public void init(GameContainer container, StateBasedGame game) throws SlickException {
 		this.container = container;
-		Music background=new Music("resources/music/troll.ogg");
+		Music background=new Music("resources/music/HBSF.ogg");
 		background.loop();
 		this.map.init();
 		this.player.init();
+		//this.enemy.init();
 		this.hud.init();
-		this.action.init();
-		ActionController Acontroler = new ActionController(this.action);
+		this.inventory.init();
+		ActionController Icontroler = new ActionController(this.inventory);
 		PlayerController controler = new PlayerController(this.player);
-		container.getInput().addKeyListener(Acontroler);
+		container.getInput().addKeyListener(Icontroler);
 		container.getInput().addKeyListener(controler);
 	}
 
 	@Override
 	public void leave(GameContainer arg0, StateBasedGame arg1) throws SlickException {
-		// TODO Auto-generated method stub
+		//TODO Auto-generated method stub
 		
 	}
 
@@ -65,28 +68,30 @@ public class MapGameState extends BasicGame implements GameState {
 		this.camera.place(container, g);
 		this.map.renderBackground();
 		this.player.render(g);
+		//this.enemy.render(g);
 		this.map.renderForeground();
 		this.hud.render(g);
-		this.action.render(container, g);
+		this.inventory.render(container, g);
 	}
 
 	@Override
 	public void update(GameContainer container, StateBasedGame game, int delta) throws SlickException {
 		this.triggers.update();
 		this.player.update(delta);
+		//this.enemy.update(delta);
 		this.camera.update(container);	
-		this.action.update(container);
+		this.inventory.update(container);
 	}
 
 	@Override
 	public void init(GameContainer arg0) throws SlickException {
-		// TODO Auto-generated method stub
+		//TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public void update(GameContainer arg0, int arg1) throws SlickException {
-		// TODO Auto-generated method stub
+		//TODO Auto-generated method stub
 		
 	}
 
